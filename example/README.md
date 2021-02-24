@@ -1,6 +1,6 @@
-## Identify full-length circRNA
+## identify full-length circRNA
 
-### Required files
+### required files
 ```
 rawFq=M1.example.fq # included in example directory
 gtfFile=gencode.v19.annotation.sort.gtf.gz # sorted and tabix indexed

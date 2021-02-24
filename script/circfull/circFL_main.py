@@ -16,7 +16,7 @@ helpInfo = '''
 Usage: circfull <command> [options]
 Command:
     RG             Reference guide detection
-    DNSC           De novo self-correction
+    DNSC           De novo self-correction to get consensus sequence
     cRG            Use RG algorithem with sequences corrected by DNSC
     strand         Identify the strand origion of circFL-seq reads
     sRG            RG algorithem with stranded circFL-seq reads.

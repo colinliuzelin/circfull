@@ -9,10 +9,10 @@ circfull is a circRNA analysis pipeline to detect and quantity full-length circR
 circfull is a free software, which can be downloaded from https://github.com/yangence/circfull
 
 ## Softwares and packages dependencies
-1) Softwares of minimap2 (>=2.1), bedtools (>=2.29.2), samtools(>=1.6) need to be installed by users.
+1) Softwares of minimap2 (>=2.1), bedtools (>=2.29.2), samtools (>=1.6) need to be installed by users.
 2) porechop(0.2.4) can be downloaded from https://github.com/rrwick/Porechop.
 We recommand replace adapters.py in porechop directory with circfull/scripts/bin/adapter.py which contain circFL-seq primers
-3) TideHunter(1.0) and trf(4.09) are included in this program.
+3) TideHunter (1.0) and trf (4.09) are included in this program.
 4) Python 3.x.x and corresponding versions of pysam, numpy, pyfasta, pandas, python-intervals, pyfasta, sklearn, interval, mappy, progressbar, docopt.
 
 
@@ -56,7 +56,7 @@ Usage: circfull <command> [options]
 
 Command:
     RG             Reference guide detection
-    DNSC           De novo self-correction
+    DNSC           De novo self-correction to get consensus sequence
     cRG            Use RG algorithem with sequences corrected by DNSC
     strand         Identify the strand origion of circFL-seq reads
     sRG            RG algorithem with stranded circFL-seq reads.
@@ -317,8 +317,8 @@ Options:
 |  13  | detail_type          | annotation details for isoform |
 |  14  | type                 | annotation for isoform |
 
-## Examples(https://github.com/yangence/circfull/example)
-
+## Examples
+Details in [examples](https://github.com/yangence/circfull/example).
 ## Copyright and License Information
 
 Copyright (C) 2021 Zelin Liu (zlliu@bjmu.edu.cn). See the [LICENSE](https://github.com/yangence/circfull/blob/master/LICENSE) file for license rights and limitations.
