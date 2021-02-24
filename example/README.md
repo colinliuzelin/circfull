@@ -53,7 +53,7 @@ circfull anno -b ${outDir}/mRG/circFL_Normal_pass.bed  -a $gtfFile -o ${outDir}/
 ```
 
 ## evaluate gene expression
-### Required files
+### required files
 ```
 umgtfFile=gencode.v19.annotation.gtf # uncompressed
 ```
