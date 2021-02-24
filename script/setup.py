@@ -36,5 +36,5 @@ setup(name='circfull',
           'circfull=circfull.circFL_main:main',
           'porechop=bin.porechop:main'
       ],
-    },
+    }
 )

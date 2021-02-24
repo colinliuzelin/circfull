@@ -2,8 +2,7 @@
 
 ### Required files
 ```
-rawFq=M1.example.fq
-gzip -d M1.example.fq.gz -c >$rawFq
+rawFq=M1.example.fq # included in example directory
 gtfFile=gencode.v19.annotation.sort.gtf.gz # sorted and tabix indexed
 genome=hg19.fa
 ```
@@ -43,9 +42,11 @@ circfull  cRG -t $thread -g $genome -a $gtfFile -f $outDir -o  $outDir # output 
 ```
 
 ### merge results and filter out low-quality circRNA
+```
 rmsk=rmsk.bed.gz # optional
 circfull  mRG  -m $rmsk -t $thread -g $genome -f $cleanFq -r $outDir -c  $outDir -s $outDir -o  $outDir # output circFL_Normal_pass.txt in $outDir/mRG
 ```
+
 ## annotate full-length circRNA
 ```
 circfull anno -b ${outDir}/mRG/circFL_Normal_pass.bed  -a $gtfFile -o ${outDir}/mRG/circFL_Normal_pass_anno.txt

@@ -11,7 +11,7 @@ circfull is a free software, which can be downloaded from https://github.com/yan
 ## Softwares and packages dependencies
 1) Softwares of minimap2 (>=2.1), bedtools (>=2.29.2), samtools(>=1.6) need to be installed by users.
 2) porechop(0.2.4) can be downloaded from https://github.com/rrwick/Porechop.
-We recommand replace adapters.py in porechop directory with https://github.com/yangence/circfull/scripts/bin/adapter.py which contain circFL-seq primers
+We recommand replace adapters.py in porechop directory with circfull/scripts/bin/adapter.py which contain circFL-seq primers
 3) TideHunter(1.0) and trf(4.09) are included in this program.
 4) Python 3.x.x and corresponding versions of pysam, numpy, pyfasta, pandas, python-intervals, pyfasta, sklearn, interval, mappy, progressbar, docopt.
 
@@ -25,7 +25,7 @@ pip install circfull
 Install latest release from source codes
 ```
 git clone https://github.com/yangence/circfull.git
-cd circfull
+cd circfull/script
 pip install -r requirements.txt
 python setup.py install
 ```
